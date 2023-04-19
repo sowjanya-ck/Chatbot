@@ -1,0 +1,19 @@
+--initally when the application starts, the bot gets the input from the user and 
+saves the previous input which is stored in the variable.
+--after that the input text will be preprocessed to remove the punctuation, space
+and converts it into uppercasee and also adds the empty string in the beginning and 
+end of input
+-- once the preprocessing is done, the chatbot checks for some events like null input, user repeatation and all.
+if all these condition holds good, it moves to next step of finding the match in the knowledge base
+
+-- The knowledge base is a array of type struct which has two filds , keywords and corresponding responses
+The bot traverse through the knowledge base  and finds the match for the keywords and input and returns the
+corresponding response of the best keyword.
+we use keyword ranking to select the best keywords in the database when there are more than one keywords that match the users inputs.
+Each keyword is inserted with space character in the beginning and end to improve the matching process.
+
+The bot is predefined to handle events such as bot repeat, user repeat, null input, same input and similar input etc.
+and it will be triggered when the condition is met.
+
+
+
