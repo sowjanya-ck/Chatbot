@@ -675,11 +675,11 @@ void copy(char *array[], vstring &v, size_t array_size)
 }
 int main()
 {
-	std::cout << "Chatterbot v8.0 Copyright (C) 2009 Gonzales Cenelia\n" << std::endl;
+	std::cout << "Chatterbot Copyright (C) 2023 sowjanya kumari\n" << std::endl;
 
 	try 
 	{
-		CBot bot("Chatterbot8");
+		CBot bot("Chatterbot");
 
 		bot.signon();
 		while(!bot.quit()) 
